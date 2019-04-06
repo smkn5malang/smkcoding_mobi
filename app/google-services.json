@@ -1,0 +1,44 @@
+{
+  "project_info": {
+    "project_number": "790469007887",
+    "firebase_url": "https://mobi-78628.firebaseio.com",
+    "project_id": "mobi-78628",
+    "storage_bucket": "mobi-78628.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:790469007887:android:975d05b3c90c3aa1",
+        "android_client_info": {
+          "package_name": "id.banggibima.mobi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "790469007887-6gflb2ve8ljohq90ce925micdjr40vcm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.banggibima.mobi",
+            "certificate_hash": "bd3bce256c0e49f5746c44b332ad93c142698e3b"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHVoRq9tP5YiXNeHLxtsqxtRjkAyz7w0c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "790469007887-dp05h9ha9v0uk7idfceud17ibsat39p2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
