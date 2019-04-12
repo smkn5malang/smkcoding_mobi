@@ -3,4 +3,19 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="colorOne">#7F1010</color>
+    <color name="colorTwo">#A31515</color>
+    <color name="colorThree">#C61919</color>
+    <color name="colorFour">#D94D42</color>
+    <color name="colorFive">#EC8576</color>
+    <color name="colorSix">#0066CC</color>
+    <color name="colorSeven">#0556A7</color>
+    <color name="colorEight">#004B95</color>
+    <color name="colorNine">#004081</color>
+    <color name="colorTen">#002d5C</color>
+    <color name="colorEleven">#070707</color>
+    <color name="colorTwelve">#121314</color>
+    <color name="colorThirteen">#161819</color>
+    <color name="colorFourteen">#212526</color>
+    <color name="colorFiveteen">#2C3033</color>
 </resources>

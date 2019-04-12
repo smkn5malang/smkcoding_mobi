@@ -11,7 +11,10 @@
     <string name="textPassword">Password</string>
     <string name="textLupaPassword">Lupa password</string>
     <string name="textBelumPunyaAkun">Belum Punya Akun</string>
+    <string name="textSudahPunyaAkun">Sudah Punya Akun</string>
     <string name="textWelcome">Selamat datang di aplikasi MOBI</string>
+    <string name="textWelcomeLogin">Selamat datang di halaman login</string>
+    <string name="textWelcomeRegister">Selamat datang di halaman register</string>
     <string name="textSayWelcome">Halo</string>
     <string name="hintUsername">Masukan username  anda</string>
     <string name="hintEmail">Masukan email anda</string>

@@ -12,7 +12,7 @@
     <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:background="@color/colorPrimaryDark"
+            android:background="@color/colorTwelve"
             android:layout_height="180dp">
 
         <TextView
@@ -31,7 +31,7 @@
                 android:layout_marginTop="-15dp"
                 android:textSize="15sp"
                 android:textColor="#FFFFFF"
-                android:text="@string/textWelcome"
+                android:text="@string/textWelcomeRegister"
                 android:textAlignment="center"
                 android:layout_marginBottom="20dp"
                 android:layout_width="match_parent"
@@ -64,7 +64,7 @@
                     android:paddingLeft="12dp"
                     android:paddingRight="12dp"
                     android:textColorHint="#B5B5B5"
-                    android:textColor="@color/colorPrimaryDark"
+                    android:textColor="@color/colorTwelve"
                     android:hint="@string/hintUsername"
                     android:layout_width="match_parent"
                     android:layout_height="55dp" />
@@ -86,7 +86,7 @@
                     android:paddingLeft="12dp"
                     android:paddingRight="12dp"
                     android:textColorHint="#B5B5B5"
-                    android:textColor="@color/colorPrimaryDark"
+                    android:textColor="@color/colorTwelve"
                     android:hint="@string/hintEmail"
                     android:layout_width="match_parent"
                     android:layout_height="55dp" />
@@ -108,10 +108,28 @@
                     android:paddingLeft="12dp"
                     android:paddingRight="12dp"
                     android:textColorHint="#B5B5B5"
-                    android:textColor="@color/colorPrimaryDark"
+                    android:textColor="@color/colorTwelve"
                     android:hint="@string/hintPassword"
                     android:layout_width="match_parent"
                     android:layout_height="55dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:id="@+id/txtSudahPunyaAkun"
+                    android:textColorHint="#B5B5B5"
+                    android:hint="@string/textSudahPunyaAkun"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
 
         </LinearLayout>
 
@@ -125,7 +143,7 @@
             android:text="@string/textRegister"
             android:textColor="#FFF"
             android:textAllCaps="false"
-            android:background="@drawable/bgbtncreate"
+            android:background="@drawable/bgbtnlogin"
             android:textSize="22sp"
             android:layout_width="match_parent"
             android:layout_height="55dp" />
@@ -136,7 +154,7 @@
             android:layout_marginLeft="16dp"
             android:layout_marginTop="14dp"
             android:text="@string/textCancel"
-            android:textColor="#AFAFAF"
+            android:textColor="@color/colorThree"
             android:textAllCaps="false"
             android:background="@drawable/bgbtncancel"
             android:textSize="22sp"

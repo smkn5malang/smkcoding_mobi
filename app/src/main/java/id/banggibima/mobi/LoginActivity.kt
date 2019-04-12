@@ -21,6 +21,7 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
 
         val btnLogin = findViewById<View>(R.id.btnLogin) as Button
+        val btnCancel = findViewById<View>(R.id.btnCancel) as Button
         val  txtBelumPunyaAkun = findViewById<View>(R.id.txtBelumPunyaAkun) as TextView
 
         btnLogin.setOnClickListener(View.OnClickListener { 
@@ -30,14 +31,22 @@ class LoginActivity : AppCompatActivity() {
         txtBelumPunyaAkun.setOnClickListener(View.OnClickListener {
             view -> register()
         })
+
+        btnCancel.setOnClickListener(View.OnClickListener {
+            view -> cancel()
+        })
+    }
+
+    private fun cancel() {
+        startActivity(Intent(this, MainActivity::class.java))
     }
 
     private fun login() {
         val inputEmailLogin = findViewById<View>(R.id.inputEmailLogin) as EditText
         val inputPasswordLogin = findViewById<View>(R.id.inputPasswordLogin) as EditText
 
-        var email = inputEmailLogin.text.toString()
-        var password = inputPasswordLogin.text.toString()
+        val email = inputEmailLogin.text.toString()
+        val password = inputPasswordLogin.text.toString()
 
         if (!email.isEmpty() && !password.isEmpty()) {
             mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(this, OnCompleteListener {

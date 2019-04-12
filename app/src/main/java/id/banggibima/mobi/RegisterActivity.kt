@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.auth.FirebaseAuth
@@ -23,6 +24,7 @@ class RegisterActivity : AppCompatActivity() {
 
         val btnRegister = findViewById<View>(R.id.btnRegister) as Button
         val btnCancel = findViewById<View>(R.id.btnCancel) as Button
+        val txtSudahPunyaAkun = findViewById<View>(R.id.txtSudahPunyaAkun) as TextView
 
         mDatabase = FirebaseDatabase.getInstance().getReference("names")
 
@@ -33,6 +35,14 @@ class RegisterActivity : AppCompatActivity() {
         btnCancel.setOnClickListener(View.OnClickListener {
             view -> cancel()
         })
+
+        txtSudahPunyaAkun.setOnClickListener(View.OnClickListener {
+            view -> haveaccount()
+        })
+    }
+
+    private fun haveaccount() {
+        startActivity(Intent(this, MainActivity::class.java))
     }
 
     private fun register() {
@@ -40,9 +50,9 @@ class RegisterActivity : AppCompatActivity() {
         val inputEmailRegister = findViewById<View>(R.id.inputEmailRegister) as EditText
         val inputPasswordRegister = findViewById<View>(R.id.inputPasswordRegister) as EditText
 
-        var username = inputUsernameRegister.text.toString()
-        var email = inputEmailRegister.text.toString()
-        var password = inputPasswordRegister.text.toString()
+        val username = inputUsernameRegister.text.toString()
+        val email = inputEmailRegister.text.toString()
+        val password = inputPasswordRegister.text.toString()
 
         if (!username.isEmpty() && !email.isEmpty() && !password.isEmpty()) {
             mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(this, OnCompleteListener {
