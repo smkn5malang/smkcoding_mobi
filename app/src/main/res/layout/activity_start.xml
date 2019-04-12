@@ -1,19 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<LinearLayout
+        android:orientation="vertical"
         xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".StartActivity">
+        android:background="#F4F4F4"
+        tools:context=".RegisterActivity">
 
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+                android:id="@+id/titlepage"
+                android:layout_marginTop="550dp"
+                android:textSize="26sp"
+                android:textColor="#FFFFFF"
+                android:text="@string/textSayWelcome"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        <TextView
+                android:id="@+id/titlepagetwo"
+                android:layout_marginTop="-15dp"
+                android:textSize="15sp"
+                android:textColor="#FFFFFF"
+                android:text="@string/textWelcome"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        <Button
+                android:id="@+id/btnContinue"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/textContinue"
+                android:textColor="#AFAFAF"
+                android:textAllCaps="false"
+                android:background="@drawable/bgbtncancel"
+                android:textSize="22sp"
+                android:layout_width="match_parent"
+                android:layout_height="55dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

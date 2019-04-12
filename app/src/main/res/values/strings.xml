@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">mobi</string>
+    <string name="textLogin">Masuk</string>
+    <string name="textRegister">Daftar</string>
+    <string name="textCreate">Buat</string>
+    <string name="textDelete">Hapus</string>
+    <string name="textContinue">Lanjutkan</string>
+    <string name="textCancel">Batal</string>
+    <string name="textUsername">Username</string>
+    <string name="textEmail">Email</string>
+    <string name="textPassword">Password</string>
+    <string name="textLupaPassword">Lupa password</string>
+    <string name="textBelumPunyaAkun">Belum Punya Akun</string>
+    <string name="textWelcome">Selamat datang di aplikasi MOBI</string>
+    <string name="textSayWelcome">Halo</string>
+    <string name="hintUsername">Masukan username  anda</string>
+    <string name="hintEmail">Masukan email anda</string>
+    <string name="hintPassword">Masukan password anda</string>
+    <string name="hintConfirmPassword">Masukan ulang password anda</string>
 </resources>
