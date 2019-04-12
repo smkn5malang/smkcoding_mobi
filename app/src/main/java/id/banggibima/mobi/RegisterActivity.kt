@@ -42,7 +42,7 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     private fun haveaccount() {
-        startActivity(Intent(this, MainActivity::class.java))
+        startActivity(Intent(this, LoginActivity::class.java))
     }
 
     private fun register() {
@@ -72,6 +72,6 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     private fun cancel() {
-        startActivity(Intent(this, LoginActivity::class.java))
+        startActivity(Intent(this, MainActivity::class.java))
     }
 }

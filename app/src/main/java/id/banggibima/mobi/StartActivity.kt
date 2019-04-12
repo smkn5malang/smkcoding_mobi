@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
-import kotlinx.android.synthetic.main.activity_home.*
 
 class StartActivity : AppCompatActivity() {
 
@@ -13,14 +12,14 @@ class StartActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_start)
 
-        val btnContinue = findViewById<View>(R.id.btnContinue) as Button
+        val btnGetStarted = findViewById<View>(R.id.btnGetStarted) as Button
 
-        btnContinue.setOnClickListener(View.OnClickListener {
-                view -> lanjutkan()
+        btnGetStarted.setOnClickListener(View.OnClickListener {
+                view -> getstarted()
         })
     }
 
-    private fun lanjutkan() {
-        startActivity(Intent(this, LoginActivity::class.java))
+    private fun getstarted() {
+            startActivity(Intent(this, StartTwoActivity::class.java))
     }
 }

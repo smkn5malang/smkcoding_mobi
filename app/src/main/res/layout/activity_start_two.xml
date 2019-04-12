@@ -7,7 +7,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/image1"
-        tools:context=".RegisterActivity">
+        tools:context=".StartTwoActivity">
 
     <LinearLayout
             android:orientation="vertical"
@@ -20,7 +20,7 @@
                 android:textColor="#FFFFFF"
                 android:text="MOBI"
                 android:textAlignment="textStart"
-                android:layout_marginTop="475dp"
+                android:layout_marginTop="423dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_width="match_parent"
@@ -30,7 +30,7 @@
                 android:id="@+id/titlepagetwo"
                 android:textSize="15sp"
                 android:textColor="#FFFFFF"
-                android:text="Selemat datang di aplikasi saya"
+                android:text="Aplikasi ini berfungsi untuk memberitahukan tentang ulasan film berdasarkan rating yang telah diperloeh oleh film tersebut serta info info film yang akan tayang di bioskop"
                 android:textAlignment="textStart"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
@@ -38,11 +38,11 @@
                 android:layout_height="wrap_content" />
 
         <Button
-                android:id="@+id/btnGetStarted"
+                android:id="@+id/btnContinues"
                 android:layout_marginRight="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="10dp"
-                android:text="Memulai"
+                android:text="@string/textContinue"
                 android:textColor="#FFFFFF"
                 android:textAllCaps="false"
                 android:background="@drawable/bgbtncontinue"

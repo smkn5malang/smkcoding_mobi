@@ -7,7 +7,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/image1"
-        tools:context=".RegisterActivity">
+        tools:context=".StartThreeActivity">
 
     <LinearLayout
             android:orientation="vertical"
@@ -30,7 +30,7 @@
                 android:id="@+id/titlepagetwo"
                 android:textSize="15sp"
                 android:textColor="#FFFFFF"
-                android:text="Selemat datang di aplikasi saya"
+                android:text="version 1.0"
                 android:textAlignment="textStart"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
@@ -38,11 +38,11 @@
                 android:layout_height="wrap_content" />
 
         <Button
-                android:id="@+id/btnGetStarted"
+                android:id="@+id/btnStart"
                 android:layout_marginRight="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="10dp"
-                android:text="Memulai"
+                android:text="Mulai"
                 android:textColor="#FFFFFF"
                 android:textAllCaps="false"
                 android:background="@drawable/bgbtncontinue"
