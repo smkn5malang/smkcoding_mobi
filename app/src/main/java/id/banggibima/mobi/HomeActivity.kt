@@ -24,13 +24,13 @@ class HomeActivity : AppCompatActivity() {
 
         val textDescription = findViewById<View>(R.id.textDescription) as TextView
         val btnLogout  = findViewById<View>(R.id.btnLogout) as Button
+        val btnAddNew  = findViewById<View>(R.id.btnAddNew) as Button
 
         mDatabase = FirebaseDatabase.getInstance().getReference("names")
 
         mDatabase.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
-                val result = snapshot.child("names").toString()
-                textDescription.text = "welcome " +  result
+
             }
 
             override fun onCancelled(p0: DatabaseError) {
@@ -41,6 +41,14 @@ class HomeActivity : AppCompatActivity() {
         btnLogout.setOnClickListener(View.OnClickListener {
             view -> logout()
         })
+
+        btnAddNew.setOnClickListener(View.OnClickListener {
+            view -> addnew()
+        })
+    }
+
+    private fun addnew() {
+        startActivity(Intent(this, AddValueActivity::class.java))
     }
 
     private fun logout() {

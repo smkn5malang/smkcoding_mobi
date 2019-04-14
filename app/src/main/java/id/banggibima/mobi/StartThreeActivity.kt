@@ -20,6 +20,6 @@ class StartThreeActivity: AppCompatActivity() {
     }
 
     private fun start() {
-        startActivity(Intent(this, MainActivity::class.java))
+        startActivity(Intent(this, LoginActivity::class.java))
     }
 }
