@@ -1,6 +1,6 @@
 # MOBI
 
-A new Flutter application.
+A new kotlin application.
 
 ## Movie application with kotlin
 
